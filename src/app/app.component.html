@@ -5,7 +5,8 @@
   <a [routerLink]="['/myfa']" routerLinkActive="router-link-active" >My Feature A</a> |
   <a [routerLink]="['/myfb']" routerLinkActive="router-link-active" >My Feature B</a> |
   <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >My Feature C (lazy load)</a> |
-  <a [routerLink]="['/routeparam/999']" routerLinkActive="router-link-active" >Route Param</a> |
+  <!-- Link parameters array -->
+  <a [routerLink]="['/routeparam', 'myId']" routerLinkActive="router-link-active" >Route Param</a> |
 </nav>
 <div class="outlet">
   <router-outlet></router-outlet>
