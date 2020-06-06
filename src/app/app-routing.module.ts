@@ -5,6 +5,7 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
 import { Home2Component } from './home2/home2.component';
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
+import { RouteParamComponent } from './route-param/route-param.component';
 
 // snippets: a-route-
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
     ],
   },
   { path: 'home2', component: Home2Component },
+  { path: 'routeparam/:id', component: RouteParamComponent },
   {
     path: 'myfc',
     // dont forget to remove MyFeatureCModule from app.module.ts

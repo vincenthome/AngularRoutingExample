@@ -5,7 +5,7 @@
 * todo: Navigation: imperative, 
 * Organizing the application features into modules.
 * Navigating to a component.
-* todo: Including a route parameter (passing the Hero id while routing to the "Hero Detail").
+* Including a route parameter
 * Child routes (nested router-outlet).
 * Lazy loading an NgModule.
 * todo: The CanActivate guard (checking route access).

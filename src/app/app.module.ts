@@ -11,6 +11,7 @@ import { ChildBComponent } from './child-b/child-b.component';
 import { MyFeatureAModule } from './my-feature-a/my-feature-a.module';
 import { MyFeatureBModule } from './my-feature-b/my-feature-b.module';
 import { MyFeatureCModule } from './my-feature-c/my-feature-c.module';
+import { RouteParamComponent } from './route-param/route-param.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MyFeatureCModule } from './my-feature-c/my-feature-c.module';
     HomeComponent,
     Home2Component,
     ChildAComponent,
-    ChildBComponent
+    ChildBComponent,
+    RouteParamComponent
   ],
   imports: [
     BrowserModule,
