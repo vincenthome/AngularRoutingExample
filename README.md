@@ -1,7 +1,8 @@
 # Angular Routing Example
 
 * Route Path: eager, wildcard, 404, redirect, nesting, lazy. snippets a-route-
-* Navigating: routeLink, todo: imperative, 
+* Navigation: routeLink, relative path, 
+* todo: Navigation: imperative, 
 * Organizing the application features into modules.
 * Navigating to a component.
 * todo: Including a route parameter (passing the Hero id while routing to the "Hero Detail").
