@@ -6,7 +6,7 @@ import { Home2Component } from './home2/home2.component';
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 
-
+// snippets: a-route-
 const routes: Routes = [
   {
     path: 'home',
