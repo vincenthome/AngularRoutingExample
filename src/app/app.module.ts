@@ -12,6 +12,8 @@ import { MyFeatureAModule } from './my-feature-a/my-feature-a.module';
 import { MyFeatureBModule } from './my-feature-b/my-feature-b.module';
 import { MyFeatureCModule } from './my-feature-c/my-feature-c.module';
 import { RouteParamComponent } from './route-param/route-param.component';
+import { MyCanActivateFeatureModule } from './my-can-activate-feature/my-can-activate-feature.module';
+import { MyCanDeactivateFeatureModule } from './my-can-deactivate-feature/my-can-deactivate-feature.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { RouteParamComponent } from './route-param/route-param.component';
     BrowserModule,
     MyFeatureAModule,
     MyFeatureBModule,
+    MyCanActivateFeatureModule,
+    MyCanDeactivateFeatureModule,
     // Feature Modules HAS TO BE BEFORE AppRoutingModule becoz catchall route is inside AppRoutingModule
     AppRoutingModule,
   ],

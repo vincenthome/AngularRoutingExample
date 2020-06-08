@@ -1,2 +1,59 @@
 <p>RouteParamComponent works!</p>
-<p>:id = {{idSnapshot}}</p>
+<ul>
+  <li>
+    params: /myId
+    <ul>
+      <li>
+        <p>.snapshot.paramMap - {{idSnapshot}}</p>
+      </li>
+      <li>
+        <p>params: Observable&lt;string&gt; - {{id$ | async}}</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    optional param: a. /myId;optId=myOptId
+      <span style="font-style: normal;">
+        b. [routerLink]="['/routeparam', 'myId', &#123; optId: 'myOptId' &#125;]"
+      </span>
+    <ul>
+      <li>
+        <p>paramMap: Observable&lt;string&gt;
+          {{idMap$ | async}}
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    query param: a. /myId?id=myId
+      <span style="font-style: normal;">
+        b. [routerLink]="['/routeparam', 'myId']" [queryParams]="&#123; id: 'myId' &#125;"
+      </span>
+    <ul>
+      <li>
+        <p>queryParams: Observable&lt;string&gt;
+          {{queryId$ | async}}
+        </p>
+      </li>
+      <li>
+        <p>queryParamMap: Observable&lt;string&gt;
+          <span style="font-style: italic;"> [queryParams]="&#123; id: 'myId' &#125;" - </span>
+          {{queryIdMap$ | async}}
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Others:
+    <ul>
+      <li>
+        <p>data: Observable&lt;Data&gt; - {{data$ | async}}</p>
+      </li>
+      <li>
+        <p>url: Observable&lt;UrlSegment[]&gt; - {{url$ | async}}</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
