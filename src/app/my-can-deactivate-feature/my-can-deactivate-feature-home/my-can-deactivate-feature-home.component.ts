@@ -8,10 +8,15 @@ import { Observable, of } from 'rxjs';
 })
 export class MyCanDeactivateFeatureHomeComponent implements OnInit {
 
-  canDeactivate: boolean;
+  dirty = false;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  public get isDirty(): boolean {
+    return this.dirty;
+  }
+
 }
