@@ -14,10 +14,13 @@ export class MyResolveFeatureDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    // 1. Using Observable when Route Changes WITHOUT changing the View.
     this.route.data.subscribe((data: { resolveData: MyModel}) => {
       this.resolveData = data.resolveData;
-      console.log(this.resolveData);
     });
+
+    // 2. Using Non-Observable Snapshot
+    // this.resolveData = this.route.snapshot.data['resolveData'];
   }
 
 }
