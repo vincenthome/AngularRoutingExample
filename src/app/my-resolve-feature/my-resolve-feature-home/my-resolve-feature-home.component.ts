@@ -16,7 +16,7 @@ export class MyResolveFeatureHomeComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe((data: { resolveData: MyModel[]}) => {
       this.resolveData = data.resolveData;
-    })
+    });
   }
 
 }

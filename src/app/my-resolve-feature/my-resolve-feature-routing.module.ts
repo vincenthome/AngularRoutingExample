@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MyResolveFeatureComponent } from './my-resolve-feature/my-resolve-feature.component';
 import { MyResolveFeatureHomeComponent } from './my-resolve-feature-home/my-resolve-feature-home.component';
 import { MyResolveFeatureHomeResolverService } from './my-resolve-feature-home-resolver.service';
+import { MyResolveFeatureDetailsComponent } from './my-resolve-feature-details/my-resolve-feature-details.component';
+import { MyResolveFeatureDetailsResolverService } from './my-resolve-feature-details-resolver.service';
 
 
 const routes: Routes = [
@@ -16,7 +18,15 @@ const routes: Routes = [
         resolve: {
           resolveData: MyResolveFeatureHomeResolverService
         }
+      },
+      {
+        path: 'details/:id',
+        component: MyResolveFeatureDetailsComponent,
+        resolve: {
+          resolveData: MyResolveFeatureDetailsResolverService
+        }
       }
+
     ]
   }
 ];
