@@ -21,6 +21,9 @@ export class MyResolveFeatureDetailsComponent implements OnInit {
 
     // 2. Using Non-Observable Snapshot
     // this.resolveData = this.route.snapshot.data['resolveData'];
+
+    // 3. if this is a Child Component and it wants to access the parent Resolver
+    // this.resolveData = this.route.parent.snapshot.data['resolveData'];
   }
 
 }
