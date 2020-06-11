@@ -1,22 +1,23 @@
-<p>(Root outlet) AppComponent</p>
-<nav>
-  <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a> |
-  <a [routerLink]="['/home2']" routerLinkActive="router-link-active" >Home 2</a> |
-  <a [routerLink]="['/myfa']" routerLinkActive="router-link-active" >My Feature A</a> |
-  <a [routerLink]="['/myfb']" routerLinkActive="router-link-active" >My Feature B</a> |
-  <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >My Feature C (lazy load)</a>
-  <p></p>
-  <a [routerLink]="['/mycaf']" routerLinkActive="router-link-active" >My Can Activate Feature (Random)</a> |
-  <a [routerLink]="['/mycdf']" routerLinkActive="router-link-active" >My Can Deactivate Feature</a> |
-  <a [routerLink]="['/myrf']" routerLinkActive="router-link-active" >My Resolve Feature List (3s delay)</a> |
-  <a [routerLink]="['/myrf/details/1']" routerLinkActive="router-link-active" >My Resolve Feature Details (3s delay)</a> |
-  <p>Route Param</p>
-  <!-- Link parameters array -->
-  <a [routerLink]="['/routeparam', 'myId']" routerLinkActive="router-link-active" >2-element Link Params Array</a> |
-  <a [routerLink]="['/routeparam', 'myId', { optId: 'myOptId' }]" routerLinkActive="router-link-active" >Optional param</a> |
-  <a [routerLink]="['/routeparam', 'myId']" [queryParams]="{ id: 'myId' }" routerLinkActive="router-link-active" >Query Params</a> |
-</nav>
-<div class="outlet">
-  <router-outlet></router-outlet>
+<div class="container">
+  <p>(Root outlet) AppComponent</p>
+  <nav>
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a> |
+    <a [routerLink]="['/home2']" routerLinkActive="router-link-active" >Home 2</a> |
+    <a [routerLink]="['/myfa']" routerLinkActive="router-link-active" >My Feature A</a> |
+    <a [routerLink]="['/myfb']" routerLinkActive="router-link-active" >My Feature B</a> |
+    <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >My Feature C (lazy load)</a>
+    <p></p>
+    <a [routerLink]="['/mycaf']" routerLinkActive="router-link-active" >My Can Activate Feature (Random)</a> |
+    <a [routerLink]="['/mycdf']" routerLinkActive="router-link-active" >My Can Deactivate Feature</a> |
+    <a [routerLink]="['/myrf']" routerLinkActive="router-link-active" >My Resolve Feature List (3s delay)</a> |
+    <a [routerLink]="['/myrf/details/1']" routerLinkActive="router-link-active" >My Resolve Feature Details (3s delay)</a> |
+    <p>Route Param</p>
+    <!-- Link parameters array -->
+    <a [routerLink]="['/routeparam', 'myId']" routerLinkActive="router-link-active" >2-element Link Params Array</a> |
+    <a [routerLink]="['/routeparam', 'myId', { optId: 'myOptId' }]" routerLinkActive="router-link-active" >Optional param</a> |
+    <a [routerLink]="['/routeparam', 'myId']" [queryParams]="{ id: 'myId' }" routerLinkActive="router-link-active" >Query Params</a> |
+  </nav>
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
