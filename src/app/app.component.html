@@ -6,11 +6,14 @@
     <a [routerLink]="['/myfa']" routerLinkActive="router-link-active" >My Feature A</a> |
     <a [routerLink]="['/myfb']" routerLinkActive="router-link-active" >My Feature B</a> |
     <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >My Feature C (lazy load)</a>
-    <p></p>
+    <p>Componentless Route</p>
+    <a [routerLink]="['/myclf']" routerLinkActive="router-link-active" >My Componentless Feature</a> |
+    <a [routerLink]="['/myclf/home']" routerLinkActive="router-link-active" >My Componentless Feature Home</a>
+    <p>Guard & Resolve</p>
     <a [routerLink]="['/mycaf']" routerLinkActive="router-link-active" >My Can Activate Feature (Random)</a> |
     <a [routerLink]="['/mycdf']" routerLinkActive="router-link-active" >My Can Deactivate Feature</a> |
     <a [routerLink]="['/myrf']" routerLinkActive="router-link-active" >My Resolve Feature List (3s delay)</a> |
-    <a [routerLink]="['/myrf/details/1']" routerLinkActive="router-link-active" >My Resolve Feature Details (3s delay)</a> |
+    <a [routerLink]="['/myrf/details/1']" routerLinkActive="router-link-active" >My Resolve Feature Details (3s delay)</a>
     <p>Route Param</p>
     <!-- Link parameters array -->
     <a [routerLink]="['/routeparam', 'myId']" routerLinkActive="router-link-active" >2-element Link Params Array</a> |
