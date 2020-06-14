@@ -5,10 +5,14 @@
     <a [routerLink]="['/home2']" routerLinkActive="router-link-active" >Home 2</a> |
     <a [routerLink]="['/myfa']" routerLinkActive="router-link-active" >My Feature A</a> |
     <a [routerLink]="['/myfb']" routerLinkActive="router-link-active" >My Feature B</a> |
-    <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >My Feature C (lazy load)</a>
+    <a [routerLink]="['/myfc']" routerLinkActive="router-link-active" >(lazy load) My Feature C</a>
     <p>Componentless Route</p>
     <a [routerLink]="['/myclf']" routerLinkActive="router-link-active" >My Componentless Feature</a> |
     <a [routerLink]="['/myclf/home']" routerLinkActive="router-link-active" >My Componentless Feature Home</a>
+    <p>Secondary Outlet</p>
+    <a [routerLink]="[{ outlets: {my2ndoutlet: ['my2ndoutletpath']}}]" routerLinkActive="router-link-active" >My Secondary Outlet Feature</a> |
+    <button class="btn btn-dark" (click)="display2ndOutlet()">Show</button> |
+    <button class="btn btn-dark" (click)="hide2ndOutlet()">Hide</button>
     <p>Guard & Resolve</p>
     <a [routerLink]="['/mycaf']" routerLinkActive="router-link-active" >My Can Activate Feature (Random)</a> |
     <a [routerLink]="['/mycdf']" routerLinkActive="router-link-active" >My Can Deactivate Feature</a> |
@@ -20,7 +24,18 @@
     <a [routerLink]="['/routeparam', 'myId', { optId: 'myOptId' }]" routerLinkActive="router-link-active" >Optional param</a> |
     <a [routerLink]="['/routeparam', 'myId']" [queryParams]="{ id: 'myId' }" routerLinkActive="router-link-active" >Query Params</a> |
   </nav>
-  <div class="outlet">
-    <router-outlet></router-outlet>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="outlet">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="outlet">
+        <router-outlet name="my2ndoutlet"></router-outlet>
+      </div>
+    </div>
   </div>
+
 </div>

@@ -17,6 +17,7 @@ import { MyCanDeactivateFeatureModule } from './my-can-deactivate-feature/my-can
 import { MyResolveFeatureModule } from './my-resolve-feature/my-resolve-feature.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MyComponentlessFeatureModule } from './my-componentless-feature/my-componentless-feature.module';
+import { MySecondaryOutletFeatureModule } from './my-secondary-outlet-feature/my-secondary-outlet-feature.module';
 
 @NgModule({
   declarations: [
@@ -34,11 +35,12 @@ import { MyComponentlessFeatureModule } from './my-componentless-feature/my-comp
     MyFeatureAModule,
     MyFeatureBModule,
     MyComponentlessFeatureModule,
+    MySecondaryOutletFeatureModule,
     MyCanActivateFeatureModule,
     MyCanDeactivateFeatureModule,
     MyResolveFeatureModule,
     // Feature Modules HAS TO BE BEFORE AppRoutingModule becoz catchall route is inside AppRoutingModule
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
