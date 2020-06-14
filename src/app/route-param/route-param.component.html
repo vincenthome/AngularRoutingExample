@@ -55,7 +55,7 @@
       </li>
       <li>
         <span>
-          .navigate(['/routeparam', 'myId'], &#123; queryParams: &#123; id: 'myId' &#125; &#125;); <button (click)="navigateUsingQueryParams()">.navigate</button>
+          .navigate(['/routeparam', 'myId'], &#123; queryParams: &#123; id: 'myId' &#125; &#125;); <button class="btn btn-dark" (click)="navigateUsingQueryParams()">.navigate</button>
         </span>
       </li>
       <li>
@@ -65,7 +65,7 @@
             <a [routerLink]="['/home']" queryParamsHandling="preserve" routerLinkActive="router-link-active">[routerLink]="['/home']" queryParamsHandling="preserve" </a>
           </li>
           <li>
-            <button (click)="navigatePreserveQueryParams()">.navigate(['/home'], &#123; queryParamsHandling: 'preserve' &#125;)</button>
+            <button class="btn btn-dark" (click)="navigatePreserveQueryParams()">.navigate(['/home'], &#123; queryParamsHandling: 'preserve' &#125;)</button>
           </li>
         </ul>
       </li>
